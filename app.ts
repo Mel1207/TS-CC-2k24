@@ -161,5 +161,32 @@ type UserType2 = {
 const userWithTheme: UserType2 = {
   userName: 'Mel',
   age: 29,
-  theme: 'dark'
+  theme: 'light'
 }
+
+// INTERFACES
+interface IUser {
+  username: string,
+  email: string,
+  age: number
+}
+
+// EMPLOYEE INTERFACE
+interface IEmployee extends IUser {
+  employeeID: string
+}
+
+const employee : IEmployee = {
+  username: 'Mel',
+  email: 'fake@gmail.com',
+  age: 25,
+  employeeID: '1231'
+}
+
+const client : IUser = {
+  username: 'Mel',
+  email: 'mel@gmail.com',
+  age: 25
+}
+
+// GENERICS
